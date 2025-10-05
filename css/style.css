@@ -1,0 +1,153 @@
+        /* Definindo variáveis de cores para facilitar manutenção */
+        :root {
+            --azul-escuro: #0d1b2a;
+            --amarelo-neon: #ffd60a;
+            --azul-neon: #00b4d8;
+            --branco: #ffffff;
+            --preto: #000000;
+        }
+
+        /* Estilo global */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: var(--preto);
+            padding: 10px 0;
+            border-bottom: 2px solid var(--azul-neon);
+            font-size: large;
+        }
+
+        /* Estilo da logo */
+        .logo {
+            font-weight: 700;
+            font-size: 2rem;
+            color: var(--azul-neon);
+            text-shadow: 0 0 10px var(--azul-neon);
+        }
+
+        /* Estilo das 4 divs com efeitos hover */
+        .div-hover {
+            background-color: var(--preto);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* Efeito hover com borda neon azul */
+        .div-hover:hover {
+            border: 2px solid var(--azul-neon);
+            box-shadow: 0 0 15px var(--azul-neon);
+            transform: translateY(-5px);
+        }
+
+        /* Estilo da lista ordenada */
+        .lista-ordenada {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Estilo do carrossel */
+        .carousel-item {
+            height: 400px;
+            background-color: var(--preto);
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 70%;
+            text-align: right;
+        }
+
+        /* Estilo dos cards de vídeo */
+        .card-video {
+            background-color: var(--preto);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card-video:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 180, 216, 0.3);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-text {
+            height: 80px;
+            /* tamanho do card */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .data-insercao {
+            color: var(--azul-neon);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .situaçao-vendida {
+            color: var(--amarelo-neon);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: var(--preto);
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 2px solid var(--azul-neon);
+        }
+
+        .social-icons a {
+            color: var(--branco);
+            font-size: 2rem;
+            margin: 0 19px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--amarelo-neon);
+            transform: translateY(-3px);
+        }
+
+        /* Estilo para seções */
+        .section-title {
+            color: var(--azul-neon);
+            margin: 30px 0 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .nav-link {
+            font-style: italic;
+            color: var(--amarelo-neon)
+        }
+
+        .nav-link:hover {
+            color: var(--azul-neon);
+        }
